@@ -1,0 +1,145 @@
+﻿<Window x:Class="WpfApp15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp15"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer x:Name="Song" Margin="-10,-10,9.6,9.8">
+            <FlowDocument>
+                <Paragraph FontSize="25" FontWeight="Bold">
+                    <Figure WrapDirection="Left" Width="300" HorizontalAnchor="PageRight" VerticalAnchor="PageTop">
+                        <BlockUIContainer>
+                            <Image Source="Image\Revit.jpg"/>
+                        </BlockUIContainer>
+                    </Figure>
+                    <Bold>Can't see it in the view? Checklist: 33 reasons why you can't find an element in Revit</Bold>
+                </Paragraph>
+                <Paragraph>1. The object or category is temporarily hidden</Paragraph>
+                <Paragraph>2. The object or category is hidden in the view</Paragraph>
+                <Paragraph>3. The object is being obscured by another element</Paragraph>
+                <Paragraph>4. The object's category or subcategory is hidden in the view</Paragraph>
+                <Paragraph>5. The object is outside the view's view range</Paragraph>
+                <Paragraph>6. The view's far clip depth is not sufficient to show the object</Paragraph>
+                <Paragraph>7. The object resides on a work set that is not loaded within the project</Paragraph>
+                <Paragraph>8. The object resides on a work set that is not visible in the view</Paragraph>
+                <Paragraph>9. The object resides on a work set that is not loaded in a linked file</Paragraph>
+                <Paragraph>10. The object resides on a work set that is not visible in a linked file</Paragraph>
+                <Paragraph>11. The object resides within a group (detail model) and it has been excluded from the group</Paragraph>
+                <Paragraph>12. The object is part of a design option that is not visible in the view</Paragraph>
+                <Paragraph>...</Paragraph>
+                <Paragraph>33. The object is in a link that is not in its correct position</Paragraph>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="1*"/>
+                        <TableColumn Width="2*"/>
+                        <TableColumn Width="5*"/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow Background="#FF8DFF8D">
+                            <TableCell>
+                                <Paragraph TextAlignment="Center">
+                                    №
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph TextAlignment="Center">
+                                    Problem
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph TextAlignment="Center">
+                                    Solution
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph TextAlignment="Center">
+                                    1
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Can't see an element
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    The object or category is temporarily hidden
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph TextAlignment="Center">
+                                    2
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Can't see an element
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    The object or category is hidden in the view
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph TextAlignment="Center">
+                                    ...
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    ...
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    ...
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph TextAlignment="Center">
+                                    33
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Can't see an element
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    The object is in a link that is not in its correct position
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        
+                    </TableRowGroup>
+                </Table>
+                <Paragraph FontSize="30">
+                    <Hyperlink NavigateUri="https://www.revitforum.org/forum/revit-all-flavors/tutorials-tips-tricks/459-">
+                        <Bold>Here's 33 reasons...</Bold>
+                    </Hyperlink>
+                </Paragraph>
+                <Paragraph>
+                    If the link doesn't open, copy "https://www.revitforum.org/forum/revit-all-flavors/tutorials-tips-tricks/459-" to your browser
+                </Paragraph>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        
+    </Grid>
+</Window>
